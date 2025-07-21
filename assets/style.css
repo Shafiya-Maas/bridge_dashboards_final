@@ -1,0 +1,248 @@
+/* Main Container */
+.main-container {
+    padding: 20px 30px;
+    max-width: 95%;
+    transform: scale(0.95);
+    transform-origin: top center;
+    margin: 0 auto;
+    overflow-x: visible;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-top: 8px;
+}
+
+/* Header Styles */
+.header-container {
+    margin-bottom: 20px;
+}
+
+.header-title {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Filter Controls */
+.filter-controls-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.date-controls-container {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 10px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.spacer {
+    flex: 1;
+}
+
+.button-container {
+    display: flex;
+}
+
+/* Filter Row */
+.filter-row {
+    margin-bottom: 20px;
+}
+
+.filter-col {
+    padding: 0 8px;
+}
+
+.filter-label {
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.filter-dropdown {
+    height: 38px;
+}
+
+.filter-dropdown .Select-menu-outer {
+    max-height: 200px;
+}
+
+/* Button Styles */
+.filter-button {
+    height: 32px;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    color: #464B7C;
+    border: none;
+    padding: 0 12px;
+}
+
+.export-button {
+    height: 32px;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    color: #5bc0de;
+    border: none;
+    padding: 0 12px;
+    margin-right: 12px;
+}
+
+.clear-button {
+    height: 32px;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    color: #d9534f;
+    border: none;
+    padding: 0 12px;
+}
+
+/* Tabs */
+.tabs-container {
+    background-color: #f0f4fa;
+    border-radius: 8px 8px 0 0;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    margin-bottom: 16px;
+}
+
+.tab {
+    background-color: #e0e7ef;
+    color: #333;
+    border-radius: 8px 8px 0 0;
+    margin-right: 4px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.tab--selected {
+    background-color: #b6d4fe;
+    color: #1a237e;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    padding: 8px 16px;
+}
+
+/* Pivot Tables */
+.pivot-table-container {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.data-table {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 700px;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.data-table .dash-spreadsheet-container {
+    max-height: 400px;
+}
+
+/* Modal Styles */
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header {
+    background-color: rgb(230, 230, 230);
+    font-weight: bold;
+    padding: 12px 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-body {
+    padding: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.modal-export-container {
+    margin-bottom: 10px;
+}
+
+.modal-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.modal-table .dash-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Loading Spinner */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+/* Alerts */
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    padding: 12px 20px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .filter-col {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    
+    .filter-controls-container {
+        flex-direction: column;
+    }
+    
+    .date-controls-container {
+        margin-bottom: 10px;
+    }
+    
+    .button-container {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 10px 15px;
+        max-width: 100%;
+        transform: none;
+    }
+    
+    .filter-col {
+        width: 100%;
+    }
+    
+    .data-table {
+        max-height: 500px;
+    }
+}
